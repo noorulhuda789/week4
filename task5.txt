@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+void bill(string day,int amount);
+
+main()
+ {
+  int amount;
+ string day;
+ cout<<"enter your bill";
+  cin>>amount;
+  cout<<"enter day you show";
+  cin>>day;
+   bill(day,amount);
+}
+  
+  void bill(string day,int amount)
+  {
+    float a;
+   if(day=="sunday")
+   {
+     a= amount*10/100;
+     cout<<"your bill is " <<a;
+   }
+   if(day!="sunday")
+    {
+      cout<<"your bill is " <<amount;
+     }
+  }
+     

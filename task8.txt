@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void equal();
+main()
+{
+equal();
+}
+void equal();
+{
+int a,b;
+cin>>a;
+cin>>b;
+if(a==b)
+{
+ cout<<"true";
+}
+if(a!=b)
+{
+cout<<"false";
+}

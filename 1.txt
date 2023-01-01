@@ -1,0 +1,52 @@
+#include<iostr#
+#include<windows.h>
+using namespace std:
+void printn();
+void printo();
+void printr();
+void gotoxy(int,int);
+main()
+{
+ gotoxy(3,8);
+ printn();
+
+gotoxy(12,8);
+ printo();
+
+ gotoxy(16,8)
+ printo();
+
+gotoxy(24,8);
+printr();
+}
+void printn()
+{
+cout<<"*        *"<<endl;
+cout<<"* *      *"<<endl;
+cout<<"*  *     * "<<endl;
+cout<<"*     *  *"<<endl;
+cout<<"*        *";
+}
+void printo()
+{
+cout<<"   * * *    "<<endl;
+cout<<" *        * "<<endl;
+cout<<" *        *"<<endl;
+cout<<" *        *"<<endl;
+cout<<"  *  *  *";
+}
+void printr()
+{
+cout<<"******
+cout<<"*    *
+cout<<"******
+cout<<"**
+cout<<"*   *
+}
+void gotoxy(int x,int y)
+{
+COORD coodinates;
+coordinates.X=x;
+coordinates.Y=y;
+SetConsoleCursorPosition(GetHandle(STD-OUTPUT-HANDLE),coordinates);
+}

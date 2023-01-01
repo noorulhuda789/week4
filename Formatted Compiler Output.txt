@@ -1,0 +1,2 @@
+D:\week4\task16.txt	file not recognized: File format not recognized
+D:\week4\collect2.exe	[Error] ld returned 1 exit status
