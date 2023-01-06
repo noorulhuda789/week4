@@ -1,0 +1,33 @@
+#include<iostream>
+#include<windows.h>
+void square();
+voidgotoxy(int,int);
+ main()
+{
+system("cls");
+square();
+gotoxy(4,3);
+while(true)
+{
+  cout<<"p";
+  cout<<"  ";
+  gotoxy(4,4);
+  cout<<"p";
+  Sleep(200);
+}
+
+void square()
+{
+cout<<"*************" <<endl;
+cout<<"*           *" <<endl;
+cout<<"*           *" <<endl;
+cout<<"*           * " <<endl;
+cout<<"*************";
+}
+void gotoxy(int x,int y)
+{
+COOR coorf;
+coorf.X=x;
+coorf.Y=y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coorf);
+}
